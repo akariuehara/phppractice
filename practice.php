@@ -42,3 +42,13 @@ $calendar_2018 = [
 
 // 12月を表示する
 echo $calendar_2018["December"];
+
+$height = 210;
+// もし $height が 150 未満の数値なら、{ } のなかが実行される
+if ($height < 150) {
+  echo "150cm 未満の方はご乗車できません。";
+} else if ($height >= 200){
+  echo "200cm 以上の方はご乗車できません。";
+}else {
+  echo "ご乗車になれます。";
+}
